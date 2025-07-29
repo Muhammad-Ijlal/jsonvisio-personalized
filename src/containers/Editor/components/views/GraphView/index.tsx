@@ -134,7 +134,7 @@ const GraphCanvas = ({ isWidget }: GraphProps) => {
   );
 };
 
-const SUPPORTED_LIMIT = 600;
+const SUPPORTED_LIMIT = Number.POSITIVE_INFINITY;
 
 export const GraphView = ({ isWidget = false }: GraphProps) => {
   const setViewPort = useGraph(state => state.setViewPort);
